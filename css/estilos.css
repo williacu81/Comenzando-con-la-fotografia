@@ -76,14 +76,55 @@ li a:hover {
 
 #imagen_principal {
 	width: 100%;
-	height: 60%;
+	height: 700px;
+	border-radius: 10px 10px 0px 0px;
 	background-color: #82c3a6;
 }
 
 #imagen_secundaria {
 	width: 100%;
-	height: 40%;
+	height: 400px;
 	background-color: #d5c75f;
+	display: flex;
+	flex-direction: row;
+}
+
+.imgsecond1 {
+
+	width: 50%;
+	height: 50%;
+	order: 1;
+
+}
+
+.imgsecond1 img {
+	box-shadow: 1px, 2px, 3px #82c3a6;
+	border: 2px solid;
+	transform: rotate();
+	transition: 1s;
+}
+
+.imgsecond1 img:hover {
+	transform: rotate(10deg);
+}
+
+.imgsecond2 {
+
+	width: 50%;
+	height: 50%;
+	order: 2;
+
+}
+
+.imgsecond2 img {
+	box-shadow: 1px, 2px, 3px #82c3a6;
+	border: 2px solid;
+	transform: translateX();
+	transition: 1s;
+}
+
+.imgsecond2 img:hover {
+	transform: translate(20px, -5px);
 }
 
 #pie {
