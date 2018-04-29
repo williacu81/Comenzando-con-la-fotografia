@@ -13,6 +13,22 @@ a {
 	font-size: 200%;
 }
 
+h2 {
+
+	font-family: 'Dancing Script', cursive;
+	color: black;
+	font-size: 180%;
+
+}
+
+h3 {
+
+	font-family: 'Dancing Script', cursive;
+	color: black;
+	font-size: 150%;
+
+}
+
 body {
 	width: 100%;
 	height: 100%;
@@ -25,6 +41,24 @@ body {
 	position: center;
 	margin-left: auto;
 	margin-right: auto;
+	animation: animacion 1s;
+}
+
+@-webkit-keyframes animacion {
+
+	0% {
+		margin-top: 150%;
+	}
+
+	60% {
+		margin-top: -5%;
+
+	}
+
+	100%{
+		margin-top: 0%;
+
+	}
 }
 
 
@@ -79,7 +113,14 @@ li a:hover {
 	height: 700px;
 	border-radius: 10px 10px 0px 0px;
 	background-color: #82c3a6;
+	text-align: center;
 }
+
+#imagen_principal img {
+
+	border: 2px solid;
+}
+
 
 #imagen_secundaria {
 	width: 100%;
@@ -87,18 +128,20 @@ li a:hover {
 	background-color: #d5c75f;
 	display: flex;
 	flex-direction: row;
+
 }
 
 .imgsecond1 {
 
 	width: 50%;
 	height: 50%;
+	text-align: center;
 	order: 1;
 
 }
 
 .imgsecond1 img {
-	box-shadow: 1px, 2px, 3px #82c3a6;
+	box-shadow: 5px, 5px, 3px #82c3a6;
 	border: 2px solid;
 	transform: rotate();
 	transition: 1s;
@@ -112,12 +155,13 @@ li a:hover {
 
 	width: 50%;
 	height: 50%;
+	text-align: center;
 	order: 2;
 
 }
 
 .imgsecond2 img {
-	box-shadow: 1px, 2px, 3px #82c3a6;
+	box-shadow: 5px, 5px, 3px #82c3a6;
 	border: 2px solid;
 	transform: translateX();
 	transition: 1s;
@@ -131,4 +175,86 @@ li a:hover {
 	width: 100%;
 	height: 40%;
 	background-color: #C6d5c5;
+	margin-bottom: 50px;
+	border-radius: 0px 0px 10px 10px;
+	display: flex;
+	flex-direction: row;
 }
+
+#text1 {
+
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	order: 1;
+
+}
+
+#text2 {
+
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	order: 2;
+}
+
+#text3 {
+	
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	order: 3;
+}
+
+#text4 {
+	
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	order: 4;
+}
+
+#retratos1, #retratos2, #paisajes1, #paisajes2 {
+	width: 100%;
+	height: 300px;
+	background-color: #d5c75f;
+	text-align: center;
+	display: flex;
+	flex: wrap;
+}
+
+#foto1{
+	margin-top: 20px;
+	order: 1;
+	-webkit-filter: blur(10px);
+}
+
+#foto2{
+	margin-top: 20px;
+	order: 2;
+	-webkit-filter: grayscale(100%);
+}
+
+#foto3{
+	margin-top: 20px;
+	order: 3;
+	-webkit-filter: sepia(90%);
+}
+
+#foto4{
+	margin-top: 20px;
+	order: 4;
+	-webkit-filter: grayscale(100%);
+}
+
+#foto5{
+	margin-top: 20px;
+	order: 5;
+}
+
+#foto6{
+	margin-top: 20px;
+	order: 6;
+	-webkit-filter: grayscale(100%);
+}
+
